@@ -1,0 +1,463 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.3;
+    font-family: 'Nunito Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* My Resets */
+.container{
+    width: 100%;
+    max-width:1300px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.items-center{
+    display: flex;
+    align-items: center;
+
+}
+.between{
+    
+}
+.flex-48{
+    flex: 0 1 46%;
+}
+.flex-30{
+    flex:0 1 32%
+}
+.width-full{
+    width: 100%;
+
+}
+:root{
+    --primary:var(rgba(1,18,45))
+    --
+}
+
+.padding{
+    padding:3rem 0;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    
+}
+.col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*custom styles*/
+.item li{ 
+    margin-right: 2.4rem;
+}
+.item li:nth-child(5){
+    margin-right: 0;
+    padding:0.5rem 1.5rem ;
+    text-transform:capitalize;
+    background-color: #F9234D;
+    font-size:1rem;
+}
+li a{
+    text-transform:uppercase;
+    color: white;
+    
+    
+}
+.navbar{
+    padding: 1.4rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+.flex-68{
+    flex: 0 1 68%;
+}
+.flex-28{
+    flex: 0 1 32%;
+}
+.flex-10{
+    flex: 0 1 12%;
+}
+.flex-84{
+    flex: 0 1 84%;
+}
+.flex-22{
+ flex: 0 1 22%;
+}
+.hero{
+    background: linear-gradient(rgba(54,46,182,0.7),rgba(54,46,182,0.7)),url(../assets/banner.png)center center no-repeat;
+    
+    background-size:cover;
+    padding: 8rem 0;
+    
+    
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    font-weight:700;
+    margin-bottom:4rem;
+    padding-right: 33rem;
+}
+.hero p{
+    padding-right: 21rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    
+}
+.btn{
+    display: inline-block;
+    margin-top:2rem;
+    padding: 0.8rem 2rem;
+    background-color: #F9234D;
+    border: 0;
+    border-radius: 4%;
+   
+
+}
+.btn a{
+    color: white;
+    font-size: 1.1rem;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #01122D;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.about p{
+    padding-right: 5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #7D7C82;
+    font-weight: 600;
+}
+.about .btn{
+    font-size: 1rem;
+}
+.join{
+    background-color: #DFECFF;
+}
+h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #01122D;
+    text-transform: capitalize;
+}
+h4{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.col-1{
+    margin-top: 4rem;
+}
+.advantages{
+   
+    padding: 0.5rem;
+   border: 0.1rem solid red;
+   border-style:dashed;
+    
+}
+.advantages h4{
+    margin-top: 0.5rem;
+}
+.advantages p{
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+    font-weight:400;
+}
+.flow{
+   
+}
+.advantages{
+    position: relative;
+}
+.flow{
+    position: absolute;
+    top: -20px;
+    left: 24px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+    
+    background-color: #DFECFF;
+    color: #F9234D;
+    font-weight: 700;
+}
+.dates{
+    border-radius: 50%;
+    width: 100%;
+    border: 0.1rem solid red;
+    border-style: dashed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    height: 9.6rem
+
+
+}
+.active{
+    background-color: #F9234D;
+    
+    color:white;
+}
+ .active p{
+    color: white;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.line{
+    border: 0.1rem solid #F9234D;
+    border-style: dashed;
+    width: 0%;
+    height: 3.2rem;
+    margin: 0 auto;
+}
+.dates p{
+    font-size: 2.1rem;
+    color:#F9234D;
+    font-weight: 800;
+
+}
+.events{
+    width: 100%;
+    height:12.4rem;
+}
+.events img{
+    width: 20%;
+}
+.events div{
+    margin-left: 2.5rem;
+}
+.events h4{
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+}
+.service .btn{
+   
+
+}
+.people{
+    background-color: #DFECFF;
+}
+.member{
+    padding: 1.2rem 0;
+    
+}
+.member h5{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+.member p{
+   
+    
+    font-weight: 600;
+    
+}
+.member:nth-child(2){
+    background-color: #F9234D;
+    border-radius: 0.6rem;
+    color: white;
+}
+.video{
+    width: 100%;
+    background: url(../assets/banner.png);
+    background-size: cover;
+    height: 80vh;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 25%;
+    border-radius: 50%;
+    
+   
+    background-color: #ffff;
+}
+.play{
+    font-size: 5rem;
+    color: #F9234D;
+}
+.news p{
+    padding-top: 0.6rem;
+}
+.news{
+    background-color: #DFECFF;
+    padding-bottom: 10rem;
+}
+.news a{
+    padding-top: 1.4rem;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration:underline;
+
+}
+.activerea {
+  color: red;
+}
+.foot{
+    background-color: #23347B;
+
+}
+h6{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+.bar{
+    font-size: 0.7rem;
+    margin-top:1.4rem;
+}
+.bar li{
+    margin-left: 1.5rem;
+}
+.bar li:nth-child(1){
+    margin-left: 0;
+}
+.bar a{
+    color: #7F85A2;
+    font-weight: 700;
+}
+.bar i{
+    font-size: 1.6rem;
+}
+#toggle{
+    display: none;
+}
+@media  screen and (max-width:768px) {
+    .logo{
+        position: relative;
+        z-index: 99;
+
+    }
+    nav{
+        display: none;
+    }
+    #toggle:checked~nav{
+        display:inline-block;
+    }
+    .bars{
+        font-size: 1.4rem;
+        color: white;
+        position: relative;
+        z-index: 99;
+    }
+    .item{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #23347B;
+        padding-top: 6.5rem;
+    }
+    .flex-68{
+        flex: 1 1 100%;
+    }
+    .flex{
+        flex-wrap: wrap; 
+    }
+    .flex-28{
+        flex: 1 1 100%;
+        padding: 1.4rem 0;
+    }
+    .bar{
+        display: none;
+    }
+    #clicked:checked~.bar{
+        display: inline-block;
+    }
+       
+    
+}
