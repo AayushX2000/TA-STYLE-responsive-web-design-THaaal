@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* My Resets */
+.container{
+    width: 100%;
+    max-width:1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.items-center{
+    display: flex;
+    align-items: center;
+
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-30{
+    flex:0 1 32%
+}
+.width-full{
+    width: 100%;
+    
+   
+    
+}
+
+.padding{
+    padding:2rem 0;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    color: #CDCECF;
+}
+/* Custom Styles */
+
+.navbar{
+    padding:1.2rem 0;
+    background-color:rgb(34,41,70)
+    
+}
+.items li{
+    margin-right: 2rem;
+}
+.items li:nth-child(3){
+    margin-right: 0;
+}
+.items a{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.active a{
+    color: green;
+}
+h1{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.col-1 p{
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding:0.5rem 1.2rem;
+    background-color:#37B667;
+    margin-top: 0.8rem;
+    border: 0;
+    color: white;
+}
+.col-1{
+    background-color: #E9ECFC;
+}
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.col-2{
+    padding-top: 1rem;
+    width: 100%;
+}
+h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
+.footer{
+    margin-top: 2rem;
+    background-color:rgb(34,41,70);
+    color: white;
+    font-size: 1.6rem;
+
+}
+@media screen and (max-width:768px){
+    .flex-48{
+     flex: 0 1 100%
+    }
+    .flex{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+       
+       
+       
+    }
+    .items,.icon {
+        display: flex;
+        flex-direction: row;
+    }
+    .btn{
+        margin: 1rem 0;
+    }
+    .navbar{
+        display: block;
+      
+    }
+
+    .flex-30{
+        flex: 0 1 100%;
+    }
+
+   
+    
+}
+    
